@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#container2 {
+    width: 300px;
+    justify-content: space-evenly;
+}
+</style>
+<body>
+    <!-- 
+        계획표 리스트 만들기
+    1. input을 3개 만들고 (날짜,시간,할일) 추가옆에 버튼있고
+    2. 날짜,시간,할일 모두 쓰고 추가 버튼 누르면
+    3.아무데나 밑에나 오른쪽이나 이쁘게 꾸며서
+    맨앞에 번호는 1부터 증가 날짜,시간,할일
+    옆에 삭제버튼 추가
+    삭제했을때 재정렬
+    1 2022.6.7 \ 5시 \ 집간다 
+    2 2022.6.7 \ 5시 \ 집간다 
+    3 2022.6.7 \ 5시 \ 집간다 
+    -->
+    
+    <input id = "date1" type="date">
+    <input id = "time1" type="time">
+    <input id = "text1" type="text">
+    <button id="createBtn">생성</button>
+    <div id="container"></div>
+</body>
+<script>
+    createBtn.onclick = function(){
+        let container2 = document.createElement("div");
+        container2.style.display = "flex";
+
+        let date = date1.value
+        let el1 = document.createElement("div");
+        el1.innerHTML = date;
+
+        let time = time1.value
+        let el2 = document.createElement("div");
+        el2.innerHTML = time;
+
+        let text = text1.value
+        let el3 = document.createElement("div");
+        el3.innerHTML = text;
+
+        let removeBtn = document.createElement("button");
+        removeBtn.innerHTML = "삭제";
+        removeBtn.onclick = function(){
+            container.removeChild(container2);
+        }
+        
+        container2.appendChild(el1);
+        container2.appendChild(el2);
+        container2.appendChild(el3);
+        container2.appendChild(removeBtn);
+
+        container.appendChild(container2);
+    };
+</script>
+</html>

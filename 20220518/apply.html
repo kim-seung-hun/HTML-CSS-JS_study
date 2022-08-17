@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>회원가입 신청서</h1>
+    <form>
+        <fieldset>
+            <legend>정보입력</legend>
+            <ul>
+                <li>아이디 : <input type="text" id="user_id"/></li>
+                <li>패스워드 : <input type="password" id="pw"/></li>
+                <li>이메일 : <input type="email" id="email"/></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>광고성 이메일을 수신하시겠습니까?</legend>
+            <label><input type="radio" name="add" value="yes"/>yes</label>
+            <label><input type="radio" name="add" value="no"/>no</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="제출하기">
+    </form>
+</body>
+</html>

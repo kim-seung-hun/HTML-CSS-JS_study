@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상단레이아웃</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .top {
+            width: 100vw;
+            height: 15vh;
+            background-color: green;
+            text-align: center;
+        }
+
+        .side1 {
+            width: 15vw;
+            height: 60vh;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        .side2 {
+            width: 15vw;
+            height: 60vh;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        .main {
+            width: 100%;
+            height: 60vh;
+            background-color: gray;
+            display: inline-block;
+        }
+
+        .footer {
+            width: 100vw;
+            height: 15vh;
+            background-color: red;
+            clear: both;
+        }
+
+        #containor {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1>사이트제목</h1>
+    </div>
+    <div id="containor">
+        <div class="side1">사이드</div>
+        <div class="main">본문</div>
+        <div class="side2">사이드</div>
+    </div>
+    <div class="footer">푸터</div>
+</body>
+
+</html>

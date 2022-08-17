@@ -1,0 +1,71 @@
+.scoreBoard{
+    width: 100%;
+    height: 100vh;
+}
+
+.scoreBoard.inner{
+    padding-top: 20px;
+    background-color: red;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    /* text align center : 글자의 중앙 정렬 */
+    font-size: 20px;
+}
+
+/* .scoreBoard.inner 바로밑의 자식 */
+/* span:first-child 첫번째 요소만 */
+/* span:last-child 마지막 요소만 */
+/* span:nth-of-type(여기에 index) 해당 요소만 */
+.scoreBoard.inner > span{
+    display: block;
+}
+
+.play-score{
+    position: relative;
+    width: 50%;
+    height: 600px;
+    background-color: beige;
+}
+
+/* .play-score:first-child -- child plat-score의 첫번째 요소*/
+.play-score:first-child{
+    border-right: 1px solid black;
+}
+
+.pos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(x 포지션 , y 포지션) */
+    transform: translate(-50%,-50%);
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+}
+
+.score-name{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* .computer-score,.player-score 두 클래스 모두 스타일 적용 가능 */
+.computer-score,.player-score{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    transform: translate(-50%,30%);
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study</title>
+    <style>
+        fieldset {
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 500px;">
+            <h1>개발자 지원서</h1>
+            <p>사람이면 지원하세요</p>
+            <hr/>
+            <h3>개인정보</h3>
+            <blockquote>
+                <label for="user_id">이름</label>
+                <input type="text" id="user_id" placeholder="공백없이 입력하세요" autofocus required>
+                <br />
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone">
+            </blockquote>
+            <h3>지원분야</h3>
+            <blockquote>
+               <label><input type="radio" name="go"> 프론트개발자</label>
+               <br>
+               <label><input type="radio" name="go"> 백엔드 개발자 개발</label>
+               <br>
+               <label><input type="radio" name="go"> 청소부</label>
+            </blockquote>
+            <h3>지원동기</h3>
+            <textarea id="memo" cols="60" rows="10" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+            <br>
+            <button type="submit">접수하기</button>
+            <button type="reset">다시쓰기</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
